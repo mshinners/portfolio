@@ -24,6 +24,15 @@ body {
   left: 14vw;
 
 }
+.main p {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 38vh;
+  left: 4vw;
+
+}
+
 #index {
   position: absolute;
   color: black;
@@ -55,4 +64,11 @@ body {
   top: 42vh;
   left: 32vw;
 
+}
+i .fa fa-github-alt {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 38vh;
+  left: 14vw;
 }
