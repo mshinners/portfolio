@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+}
+#background {
+  position: relative;
+  background-image: url("background.jpg"); width: 100vw;
+}
+.main h1 {
+  position: absolute;
+  color: black;
+  font-size: 5vh;
+  top: 32vh;
+  left: 10vw;
+
+}
+
+.main h2 {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 38vh;
+  left: 14vw;
+
+}
+.main p {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 38vh;
+  left: 4vw;
+
+}
+
+#index {
+  position: absolute;
+  color: black;
+  font-size: 2vh;
+  top: 42vh;
+  left: 8vw;
+
+}
+#about {
+  position: absolute;
+  color: black;
+  font-size: 2vh;
+  top: 42vh;
+  left: 16vw;
+
+}
+#portfolio {
+  position: absolute;
+  color: black;
+  font-size: 2vh;
+  top: 42vh;
+  left: 24vw;
+
+}
+#contact {
+  position: absolute;
+  color: black;
+  font-size: 2vh;
+  top: 42vh;
+  left: 32vw;
+
+}
+i .fa fa-github-alt {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 38vh;
+  left: 14vw;
+}
