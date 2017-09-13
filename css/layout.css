@@ -65,10 +65,17 @@ body {
   left: 32vw;
 
 }
-i .fa fa-github-alt {
+#github {
   position: absolute;
   color: black;
-  font-size: 3vh;
-  top: 38vh;
-  left: 14vw;
+  font-size: 8vh;
+  top: 17vh;
+  left: 24vw;
+}
+#linkedIn {
+  position: absolute;
+  color: black;
+  font-size: 8vh;
+  top: 17vh;
+  left: 16vw;
 }
