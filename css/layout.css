@@ -35,46 +35,56 @@ body {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 11vw;
+  top: 44vh;
+  left: 9vw;
+  width: 6vw;
 
 }
 #portfolio {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 19vw;
+  top: 44vh;
+  left: 17vw;
+  width: 6vw;
 
 }
 #contact {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 27vw;
+  top: 44vh;
+  left: 25vw;
+  width: 6vw;
 
 }
 #github {
   position: absolute;
   color: black;
   font-size: 8vh;
-  top: 17vh;
-  left: 24vw;
+  top: 12vh;
+  left: 14vw;
 }
 #linkedIn {
   position: absolute;
   color: black;
   font-size: 8vh;
-  top: 17vh;
-  left: 16vw;
+  top: 12vh;
+  left: 9vw;
 }
 #bio {
   position: absolute;
   color: black;
   font-size: 3vh;
-  top: 68vh;
-  left: 4vw;
+  top: 8vh;
+  left: 44vw;
+}
+#projectHeader {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 59vh;
+  left: 9vw;
 }
 }
 @media only screen and (min-width: 600px) {
