@@ -13,7 +13,6 @@ body {
   font-size: 5vh;
   top: 32vh;
   left: 10vw;
-
 }
 
 .main h2 {
@@ -30,52 +29,82 @@ body {
   font-size: 3vh;
   top: 38vh;
   left: 4vw;
-
 }
 
-#index {
-  position: absolute;
-  color: black;
-  font-size: 2vh;
-  top: 42vh;
-  left: 8vw;
-
-}
 #about {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 16vw;
+  top: 44vh;
+  left: 9vw;
+  width: 6vw;
 
 }
 #portfolio {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 24vw;
+  top: 44vh;
+  left: 17vw;
+  width: 6vw;
 
 }
 #contact {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 42vh;
-  left: 32vw;
+  top: 44vh;
+  left: 25vw;
+  width: 6vw;
 
 }
 #github {
   position: absolute;
   color: black;
   font-size: 8vh;
-  top: 17vh;
-  left: 24vw;
+  top: 12vh;
+  left: 14vw;
 }
 #linkedIn {
   position: absolute;
   color: black;
   font-size: 8vh;
-  top: 17vh;
-  left: 16vw;
+  top: 12vh;
+  left: 9vw;
+}
+#bio {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 8vh;
+  left: 44vw;
+}
+#projectHeader {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 59vh;
+  left: 9vw;
+}
+}
+@media only screen and (min-width: 600px) {
+.icon-menu {
+float: right;
+display: none;
+}
+.main-nav ul {
+display: inline-block;
+padding: 1em;
+list-style: none;
+clear: both;
+}
+.main-nav li {
+display: inline-block;
+padding: .5em .2em;
+margin-left: 4em;
+}
+.main-nav:hover ul {
+display: inline-block;
+
+}
 }
