@@ -3,9 +3,6 @@
 var projects = [];
 
 function Projects (title, category, author, authorUrl, body) {
-  // done: Use the JS object passed in to complete this constructor function:
-  // Save ALL the properties of `rawDataObj` into `this`
-  //test
   this.title = title;
   this.category = category;
   this.author = author;
@@ -22,3 +19,5 @@ function Portfolio(image, title, ghPagesUrl) {
 
 Portfolio.prototype.toHtml = function() {
   var $newPortfolio = $('div.template').clone();
+};
+};

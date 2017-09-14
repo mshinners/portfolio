@@ -79,3 +79,25 @@ body {
   top: 17vh;
   left: 16vw;
 }
+
+@media only screen and (min-width: 600px) {
+.icon-menu {
+float: right;
+display: none;
+}
+.main-nav ul {
+display: inline-block;
+padding: 1em;
+list-style: none;
+clear: both;
+}
+.main-nav li {
+display: inline-block;
+padding: .5em .2em;
+margin-left: 4em;
+}
+.main-nav:hover ul {
+display: inline-block;
+
+}
+}
