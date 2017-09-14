@@ -3,22 +3,22 @@
 var projectData = [
   {
     image:       'imgs/pic01.jpg',
-    title:       'Scramble',
+    title:       '301 Final Project',
     ghPagesUrl:  'github.com/mshinners/etc',
   },
   {
     image:       'imgs/pic02.jpg',
-    title:       'Bus Mall',
+    title:       'Scramble',
     ghPagesUrl:  'github.com/mshinners/etc',
   },
   {
     image:       'imgs/pic03.jpg',
-    title:       'Salmon Cookies',
+    title:       'Bus Mall',
     ghPagesUrl:  'github.com/mshinners/etc',
   },
   {
     image:       'imgs/pic04.jpg',
-    title:       'NW Travel Guide',
+    title:       'Salmon Cookies',
     ghPagesUrl:  'github.com/mshinners/etc',
   },
   {
