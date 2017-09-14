@@ -13,7 +13,6 @@ body {
   font-size: 5vh;
   top: 32vh;
   left: 10vw;
-
 }
 
 .main h2 {
@@ -30,23 +29,14 @@ body {
   font-size: 3vh;
   top: 38vh;
   left: 4vw;
-
 }
 
-#index {
-  position: absolute;
-  color: black;
-  font-size: 2vh;
-  top: 42vh;
-  left: 8vw;
-
-}
 #about {
   position: absolute;
   color: black;
   font-size: 2vh;
   top: 42vh;
-  left: 16vw;
+  left: 11vw;
 
 }
 #portfolio {
@@ -54,7 +44,7 @@ body {
   color: black;
   font-size: 2vh;
   top: 42vh;
-  left: 24vw;
+  left: 19vw;
 
 }
 #contact {
@@ -62,7 +52,7 @@ body {
   color: black;
   font-size: 2vh;
   top: 42vh;
-  left: 32vw;
+  left: 27vw;
 
 }
 #github {
@@ -79,7 +69,14 @@ body {
   top: 17vh;
   left: 16vw;
 }
-
+#bio {
+  position: absolute;
+  color: black;
+  font-size: 3vh;
+  top: 68vh;
+  left: 4vw;
+}
+}
 @media only screen and (min-width: 600px) {
 .icon-menu {
 float: right;
