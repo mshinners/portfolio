@@ -14,7 +14,21 @@ Portfolio.prototype.toHtml = function() {
   var $newPortfolio = $('div.template').clone();
 };
 $('.main h1').hide().fadeIn(3000);
-$('.jobTitle').hide().delay(1000).fadeIn(4000).fadeOut(2000);
+
+//function to loop through job titles
+var titleArray = ['UX/UI Designer & Developer', 'Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev'];
+var currentTitleIndex = -1;
+
+var titleInterval = setInterval(function(){
+++currentTitleIndex;
+if (currentTitleIndex >= titleArray.length) {
+    currentTitleIndex = 0;
+}
+$('.jobName').fadeIn(4000).fadeOut(2000);
+}, 1000);
+
+
+
 
 //Future work
 // $( "#about" ).onClick();

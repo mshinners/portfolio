@@ -11,6 +11,7 @@ body {
   text-align: center;
   position: 43vh;
   font-size: 7vh;
+  color: tan;
 }
 .jobTitle {
   /*position: relative;*/
@@ -21,11 +22,12 @@ body {
   top: 38vh;
   left: 14vw;
 }
-.hamMenu {
-  display: none;
+#hamMenu {
   float: right;
-  position: 2vh;
+  color: beige;
+  position: 1vh;
   font-size: 5vh;
+  padding-right: 1vw;
 }
 #bio {
   position: absolute;
@@ -37,11 +39,26 @@ body {
 }
   #projectHeader {
     position: absolute;
-    color: black;
+    color: tan;
     font-size: 3vh;
     top: 59vh;
     left: 9vw;
     display: none;
+}
+#about {
+  display: none;
+}
+#portfolio {
+  display: none;
+}
+#contact {
+  display: none;
+}
+#github {
+  display: none;
+}
+#linkedIn {
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {
