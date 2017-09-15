@@ -13,16 +13,16 @@ function Portfolio(image, title, ghPagesUrl) {
 Portfolio.prototype.toHtml = function() {
   var $newPortfolio = $('div.template').clone();
 };
-};
-$( "#about" ).onClick();
-$( "#portfolio" ).onClick();
-$( "#contact" ).onClick();
+//Future work
+// $( "#about" ).onClick();
+// $( "#portfolio" ).onClick();
+// $( "#contact" ).onClick();
+//
+// $('#title').show()
+// $('#bio').show()
+// $('#projectHeader').show()
+//
+// $('#linkedIn').onClick()
+// $('#github').onClick()
 
-$('#title').show()
-$('#bio').show()
-$('#projectHeader').show()
-
-$('#linkedIn').onClick()
-$('#github').onClick()
-
-// .toHtml() 
+// .toHtml()
