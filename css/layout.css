@@ -38,6 +38,7 @@ body {
   left: 8vw;
   width: 8vw;
   border-radius: 50%;
+  overflow: hidden;
 }
 #portfolio {
   position: absolute;
@@ -47,6 +48,7 @@ body {
   left: 18vw;
   width: 8vw;
   border-radius: 50%;
+  overflow: hidden;
 }
 #contact {
   position: absolute;
@@ -56,6 +58,7 @@ body {
   left: 28vw;
   width: 8vw;
   border-radius: 50%;
+  overflow: hidden;
 }
 #github {
   position: absolute;
