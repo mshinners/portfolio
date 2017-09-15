@@ -2,11 +2,10 @@
   box-sizing: border-box;
 }
 body {
-}
-#background {
   position: relative;
   background-image: url("background.jpg"); width: 100vw;
 }
+
 .main h1 {
   position: absolute;
   color: black;
@@ -35,28 +34,28 @@ body {
   position: absolute;
   color: black;
   font-size: 2vh;
-  top: 44vh;
-  left: 9vw;
-  width: 6vw;
-
+  top: 45vh;
+  left: 8vw;
+  width: 8vw;
+  border-radius: 50%;
 }
 #portfolio {
   position: absolute;
   color: black;
   font-size: 2vh;
   top: 44vh;
-  left: 17vw;
-  width: 6vw;
-
+  left: 18vw;
+  width: 8vw;
+  border-radius: 50%;
 }
 #contact {
   position: absolute;
   color: black;
   font-size: 2vh;
   top: 44vh;
-  left: 25vw;
-  width: 6vw;
-
+  left: 28vw;
+  width: 8vw;
+  border-radius: 50%;
 }
 #github {
   position: absolute;

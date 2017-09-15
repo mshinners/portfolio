@@ -24,3 +24,5 @@ $('#projectHeader').show()
 
 $('#linkedIn').onClick()
 $('#github').onClick()
+
+// .toHtml() 
