@@ -5,74 +5,27 @@ body {
   position: relative;
   background-image: url("background.jpg"); width: 100vw;
 }
-
 .main h1 {
-  position: absolute;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+  position: 43vh;
+  font-size: 7vh;
+}
+.jobTitle {
+  /*position: relative;*/
+  top: 200vh;
+  text-align: center;
   color: black;
+  font-size: 4vh;
+  top: 38vh;
+  left: 14vw;
+}
+.hamMenu {
+  display: none;
+  float: right;
+  position: 2vh;
   font-size: 5vh;
-  top: 32vh;
-  left: 10vw;
-}
-
-.main h2 {
-  position: absolute;
-  color: black;
-  font-size: 3vh;
-  top: 38vh;
-  left: 14vw;
-
-}
-.main p {
-  position: absolute;
-  color: black;
-  font-size: 3vh;
-  top: 38vh;
-  left: 4vw;
-}
-
-#about {
-  position: absolute;
-  color: black;
-  font-size: 2vh;
-  top: 45vh;
-  left: 8vw;
-  width: 8vw;
-  border-radius: 50%;
-  overflow: hidden;
-}
-#portfolio {
-  position: absolute;
-  color: black;
-  font-size: 2vh;
-  top: 45vh;
-  left: 18vw;
-  width: 8vw;
-  border-radius: 50%;
-  overflow: hidden;
-}
-#contact {
-  position: absolute;
-  color: black;
-  font-size: 2vh;
-  top: 45vh;
-  left: 28vw;
-  width: 8vw;
-  border-radius: 50%;
-  overflow: hidden;
-}
-#github {
-  position: absolute;
-  color: black;
-  font-size: 8vh;
-  top: 12vh;
-  left: 14vw;
-}
-#linkedIn {
-  position: absolute;
-  color: black;
-  font-size: 8vh;
-  top: 12vh;
-  left: 9vw;
 }
 #bio {
   position: absolute;
@@ -80,33 +33,99 @@ body {
   font-size: 3vh;
   top: 8vh;
   left: 44vw;
+  display: none;
 }
-#projectHeader {
-  position: absolute;
-  color: black;
-  font-size: 3vh;
-  top: 59vh;
-  left: 9vw;
+  #projectHeader {
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 59vh;
+    left: 9vw;
+    display: none;
 }
-}
-@media only screen and (min-width: 600px) {
-.icon-menu {
-float: right;
-display: none;
-}
-.main-nav ul {
-display: inline-block;
-padding: 1em;
-list-style: none;
-clear: both;
-}
-.main-nav li {
-display: inline-block;
-padding: .5em .2em;
-margin-left: 4em;
-}
-.main-nav:hover ul {
-display: inline-block;
 
-}
-}
+@media only screen and (min-width: 600px) {
+  .main h1 {
+    position: absolute;
+    color: black;
+    font-size: 5vh;
+    top: 32vh;
+    left: 10vw;
+  }
+
+  .main h2 {
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 38vh;
+    left: 14vw;
+
+  }
+  .main p {
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 38vh;
+    left: 4vw;
+  }
+
+  #about {
+    position: absolute;
+    color: black;
+    font-size: 2vh;
+    top: 45vh;
+    left: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #portfolio {
+    position: absolute;
+    color: black;
+    font-size: 2vh;
+    top: 45vh;
+    left: 18vw;
+    width: 8vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #contact {
+    position: absolute;
+    color: black;
+    font-size: 2vh;
+    top: 45vh;
+    left: 28vw;
+    width: 8vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #github {
+    position: absolute;
+    color: black;
+    font-size: 8vh;
+    top: 12vh;
+    left: 14vw;
+  }
+  #linkedIn {
+    position: absolute;
+    color: black;
+    font-size: 8vh;
+    top: 12vh;
+    left: 9vw;
+  }
+  #bio {
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 8vh;
+    left: 44vw;
+    display: none;
+  }
+  #projectHeader {
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 59vh;
+    left: 9vw;
+  }
+  }

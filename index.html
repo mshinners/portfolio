@@ -3,19 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Shinners</title>
     <script src="https://use.fontawesome.com/ae0d3b7a85.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
+    <title>Michael Shinners</title>
   </head>
   <body>
 
     <div class="main">
       <h1>Michael I. Shinners</h1>
-      <h2 id ="title">This is my job title</h2>
+      <div class="jobTitle">
+        <h2 class='jobName'>UX/UI Designer & Developer</h2>
+        <h2 class='jobName'>Software Developer</h2>
+        <h2 class='jobName'>Web Designer & Developer</h2>
+        <h2 class='jobName'>Dev</h2>
+        <h2 class='jobName'>Software Engineer</h2>
+    </div>
+
       <p id="bio">This is the story of me. This is where I sell myself to prospective employers. The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
       <p id="projectHeader">Here's a sampling of my work.</p>
       <a href="https://www.linkedin.com/in/michael-shinners-652414147/"><i class="fa fa-linkedin" aria-hidden="true" id="linkedIn"></i>
@@ -25,6 +32,8 @@
       <button type="button" id='portfolio'>My Portfolio</button>
       <button type="button" id='contact'>Contact Me</button>
     </div>
+    <i class="fa fa-bars" aria-hidden="true" id='hamMenu'></i>
+
   </body>
   <script type="text/javascript" src="scripts/portfolioData.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>

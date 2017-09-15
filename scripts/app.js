@@ -13,6 +13,9 @@ function Portfolio(image, title, ghPagesUrl) {
 Portfolio.prototype.toHtml = function() {
   var $newPortfolio = $('div.template').clone();
 };
+$('.main h1').hide().fadeIn(3000);
+$('.jobTitle').hide().delay(1000).fadeIn(4000).fadeOut(2000);
+
 //Future work
 // $( "#about" ).onClick();
 // $( "#portfolio" ).onClick();
