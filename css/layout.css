@@ -1,4 +1,5 @@
 * {
+  /*mobile first design*/
   box-sizing: border-box;
 }
 body {
@@ -11,7 +12,7 @@ body {
   text-align: center;
   position: 43vh;
   font-size: 7vh;
-  color: tan;
+  color: beige;
 }
 .jobTitle {
   /*position: relative;*/
@@ -31,27 +32,27 @@ body {
 }
 #bio {
   position: absolute;
-  color: black;
-  font-size: 3vh;
+  color: beige;
+    font-size: 3vh;
   top: 8vh;
   left: 44vw;
   display: none;
 }
-  #projectHeader {
-    position: absolute;
-    color: tan;
-    font-size: 3vh;
-    top: 59vh;
-    left: 9vw;
-    display: none;
-}
-#about {
+#projectHeader {
+  position: absolute;
+  color: beige;
+  font-size: 3vh;
+  top: 59vh;
+  left: 9vw;
   display: none;
 }
-#portfolio {
+#aboutButton {
   display: none;
 }
-#contact {
+#portfolioButton {
+  display: none;
+}
+#contactButton {
   display: none;
 }
 #github {
@@ -61,10 +62,11 @@ body {
   display: none;
 }
 
+/*Full-screen view*/
 @media only screen and (min-width: 600px) {
   .main h1 {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 5vh;
     top: 32vh;
     left: 10vw;
@@ -72,7 +74,7 @@ body {
 
   .main h2 {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 3vh;
     top: 38vh;
     left: 14vw;
@@ -80,41 +82,47 @@ body {
   }
   .main p {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 3vh;
     top: 38vh;
     left: 4vw;
   }
 
-  #about {
+  #aboutButton {
     position: absolute;
+    background-color: tan;
     color: black;
     font-size: 2vh;
     top: 45vh;
     left: 8vw;
     width: 8vw;
-    border-radius: 50%;
+    border-radius: 40%;
     overflow: hidden;
+    display: inline-block;
   }
-  #portfolio {
+  #portfolioButton {
     position: absolute;
+    background-color: tan;
     color: black;
     font-size: 2vh;
     top: 45vh;
     left: 18vw;
     width: 8vw;
-    border-radius: 50%;
+    border-radius: 40%;
     overflow: hidden;
+    display: inline-block;
   }
-  #contact {
+  #contactButton {
     position: absolute;
+    background-color: tan;
     color: black;
     font-size: 2vh;
     top: 45vh;
     left: 28vw;
     width: 8vw;
-    border-radius: 50%;
+    border-radius: 40%;
     overflow: hidden;
+    display: inline-block;
   }
   #github {
     position: absolute;
@@ -144,5 +152,8 @@ body {
     font-size: 3vh;
     top: 59vh;
     left: 9vw;
+    display: none;
   }
+  #hamMenu {
+    display: none;
   }

@@ -17,19 +17,35 @@ $('.main h1').hide().fadeIn(3000);
 
 //function to loop through job titles
 var titleArray = ['UX/UI Designer & Developer', 'Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev'];
-var currentTitleIndex = -1;
-
-var titleInterval = setInterval(function(){
-++currentTitleIndex;
-if (currentTitleIndex >= titleArray.length) {
-    currentTitleIndex = 0;
+var currentTitleIndex = 0;
+  for (var i = 0; i < titleArray.length; i++) {
+// var titleInterval = setInterval(function(){
+//   ++currentTitleIndex;
+//   if (currentTitleIndex >= titleArray.length) {
+//     currentTitleIndex = 0;
+//   }
+// });
+$('.jobName').text(titleArray[i]).fadeIn(4000).fadeOut(2000);
 }
-$('.jobName').fadeIn(4000).fadeOut(2000);
-}, 1000);
-
-
-
-
+// }, 1000);
+$('#aboutButton').click(function(){
+  $("#bio").fadeIn(2000);
+  $("#linkedIn").fadeOut(1000);
+  $("#github").fadeOut(1000);
+  $("#projectHeader").fadeOut(1000);
+});
+$('#projectsButton').click(function(){
+  $("#projectHeader").fadeIn(2000);
+  $("#bio").fadeOut(1000);
+  $("#linkedIn").fadeOut(1000);
+  $("#github").fadeOut(1000);
+});
+$('#contactButton').click(function(){
+  $("#linkedIn").fadeIn(2000);
+  $("#github").fadeIn(2000);
+  $("#bio").fadeOut(1000);
+  $("#projectHeader").fadeOut(1000);
+});
 //Future work
 // $( "#about" ).onClick();
 // $( "#portfolio" ).onClick();
