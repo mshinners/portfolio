@@ -4,7 +4,7 @@
 }
 body {
   position: relative;
-  background-image: url("background.jpg"); width: 100vw;
+  background-image: url("imgs/background.jpg"); width: 100vw;
 }
 .main h1 {
   position: relative;
@@ -12,27 +12,27 @@ body {
   text-align: center;
   position: 43vh;
   font-size: 7vh;
-  color: beige;
+  color: tan;
 }
 .jobTitle {
   /*position: relative;*/
   top: 200vh;
   text-align: center;
-  color: black;
+  color: tan;
   font-size: 4vh;
   top: 38vh;
   left: 14vw;
 }
 #hamMenu {
   float: right;
-  color: beige;
+  color: tan;
   position: 1vh;
   font-size: 5vh;
   padding-right: 1vw;
 }
 #bio {
   position: absolute;
-  color: beige;
+  color: tan;
     font-size: 3vh;
   top: 8vh;
   left: 44vw;
@@ -40,7 +40,7 @@ body {
 }
 #projectHeader {
   position: absolute;
-  color: beige;
+  color: tan;
   font-size: 3vh;
   top: 59vh;
   left: 9vw;
@@ -90,8 +90,8 @@ body {
 
   #aboutButton {
     position: absolute;
-    background-color: tan;
-    color: black;
+    background-color: beige;
+    color: darkblue;
     font-size: 2vh;
     top: 45vh;
     left: 8vw;
@@ -102,8 +102,8 @@ body {
   }
   #portfolioButton {
     position: absolute;
-    background-color: tan;
-    color: black;
+    background-color: beige;
+    color: darkblue;
     font-size: 2vh;
     top: 45vh;
     left: 18vw;
@@ -114,8 +114,8 @@ body {
   }
   #contactButton {
     position: absolute;
-    background-color: tan;
-    color: black;
+    background-color: beige;
+    color: darkblue;
     font-size: 2vh;
     top: 45vh;
     left: 28vw;
@@ -126,21 +126,21 @@ body {
   }
   #github {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 8vh;
     top: 12vh;
     left: 14vw;
   }
   #linkedIn {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 8vh;
     top: 12vh;
     left: 9vw;
   }
   #bio {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 3vh;
     top: 8vh;
     left: 44vw;
@@ -148,7 +148,7 @@ body {
   }
   #projectHeader {
     position: absolute;
-    color: black;
+    color: beige;
     font-size: 3vh;
     top: 59vh;
     left: 9vw;
