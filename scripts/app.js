@@ -32,10 +32,10 @@ $('#aboutButton').click(function(){
   $("#bio").fadeIn(2000);
   $("#linkedIn").fadeOut(1000);
   $("#github").fadeOut(1000);
-  $("#projectHeader").fadeOut(1000);
+  $("#projectsDiv").fadeOut(1000);
 });
 $('#projectsButton').click(function(){
-  $("#projectHeader").fadeIn(2000);
+  $("#projectsDiv").fadeIn(2000);
   $("#bio").fadeOut(1000);
   $("#linkedIn").fadeOut(1000);
   $("#github").fadeOut(1000);
@@ -44,7 +44,7 @@ $('#contactButton').click(function(){
   $("#linkedIn").fadeIn(2000);
   $("#github").fadeIn(2000);
   $("#bio").fadeOut(1000);
-  $("#projectHeader").fadeOut(1000);
+  $("#projectsDiv").fadeOut(1000);
 });
 
 

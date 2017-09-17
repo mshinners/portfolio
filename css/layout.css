@@ -87,21 +87,21 @@ body {
     top: 38vh;
     left: 4vw;
   }
+  #projectsDiv {
+    display: none;
+  }
   .myProjects {
     width: 100vw;
     position: absolute;
-    top: 83vh;
-    left: 1vw;
-    /*display: none;*/
+    top: 60vh;
+    left: 4vw;
   }
   .col-4 {
     width: calc(100%/6);
     float: left;
-    /*border: 2px solid black;*/
   }
   .myProjects img{
     width: 75%;
-
   }
 
   #aboutButton {
@@ -116,7 +116,7 @@ body {
     overflow: hidden;
     display: inline-block;
   }
-  #portfolioButton {
+  #projectsButton {
     position: absolute;
     background-color: beige;
     color: darkblue;
