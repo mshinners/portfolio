@@ -1,45 +1,69 @@
 'use strict';
 
+//function to put projects in a grid
 var projects = [];
 
-//function to put projects in a 3x1 table
-function Portfolio(image, title, ghPagesUrl) {
-  this.img = img;
-  this.title = title;
-  this.ghPagesUrl = ghPagesUrl;
+var projectTemplateHTML = $('#projectTemplate').html();
+// console.log(projectTemplateHTML);
+var templateFunction = Handlebars.compile(projectTemplateHTML);
+// console.log(templateFunction);
+function Portfolio(projectData) {
+  Object.assign(this, projectData);
   projects.push(this);
-}
-
-Portfolio.prototype.toHtml = function() {
-  var $newPortfolio = $('div.template').clone();
 };
+console.log(projectData);
+console.log(this);
+Portfolio.prototype.toHtml = function() {
+  var templateParts = templateFunction(this);
+  $('#projectsDiv').append(templateParts);
+
+  console.log(templateParts);
+}
+projectData.forEach(function(projObj) {
+  new Portfolio(projObj);
+});
+projects.forEach(function(projObj) {
+  projObj.toHtml();
+});
+
+
+
+
+
 $('.main h1').hide().fadeIn(3000);
 
 //function to loop through job titles
-var titleArray = ['UX/UI Designer & Developer', 'Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev'];
-var currentTitleIndex = -1;
-
+var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev', 'UX/UI  Developer'];
+var currentTitleIndex = 0;
+  for (var i = 0; i < titleArray.length; i++) {
 var titleInterval = setInterval(function(){
-++currentTitleIndex;
-if (currentTitleIndex >= titleArray.length) {
+  ++currentTitleIndex;
+  if (currentTitleIndex >= titleArray.length) {
     currentTitleIndex = 0;
+  }
+});
+$('.jobName').text(titleArray[i]).fadeIn(4000).fadeOut(2000);
 }
-$('.jobName').fadeIn(4000).fadeOut(2000);
-}, 1000);
 
+//Function chain that allows different elements to fade-in/out
+$('#aboutButton').click(function(){
+  $("#bio").fadeIn(2000);
+  $("#linkedIn").fadeOut(1000);
+  $("#github").fadeOut(1000);
+  $("#projectsDiv").fadeOut(1000);
+});
+$('#projectsButton').on('click', function(){
+  $("#projectsDiv").fadeIn(2000);
+  console.log($('#projectsDiv')[0]);
+  $("#bio").fadeOut(1000);
+  $("#linkedIn").fadeOut(1000);
+  $("#github").fadeOut(1000);
+});
+$('#contactButton').click(function(){
+  $("#linkedIn").fadeIn(2000);
+  $("#github").fadeIn(2000);
+  $("#bio").fadeOut(1000);
+  $("#projectsDiv").fadeOut(1000);
+});
 
-
-
-//Future work
-// $( "#about" ).onClick();
-// $( "#portfolio" ).onClick();
-// $( "#contact" ).onClick();
-//
-// $('#title').show()
-// $('#bio').show()
-// $('#projectHeader').show()
-//
-// $('#linkedIn').onClick()
-// $('#github').onClick()
-
-// .toHtml()
+$('#hamMenu').click()

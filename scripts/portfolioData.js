@@ -2,18 +2,24 @@
 
 var projectData = [
   {
-    image:       'imgs/pic02.jpg',
+    image:       'imgs/scramble.png',
     title:       'Scramble',
-    ghPagesUrl:  'github.com/mshinners/etc',
+    ghPagesUrl:  'https://mshinners.github.io/Scramble/',
   },
   {
-    image:       'imgs/pic03.jpg',
+    image:       'imgs/busMall.png',
     title:       'Bus Mall',
-    ghPagesUrl:  'github.com/mshinners/etc',
+    ghPagesUrl:  'https://mshinners.github.io/busMall/',
   },
   {
-    image:       'imgs/pic04.jpg',
+    image:       'imgs/salmonCookies.png',
     title:       'Salmon Cookies',
-    ghPagesUrl:  'github.com/mshinners/etc',
+    ghPagesUrl:  'https://mshinners.github.io/cookie-stand/',
   },
+  {
+    image:       'imgs/nwGuide.png',
+    title:       'NW Guide',
+    ghPagesUrl:  'https://mshinners.github.io/',
+  },
+
 ];

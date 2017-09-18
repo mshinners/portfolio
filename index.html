@@ -6,6 +6,15 @@
     <script src="https://use.fontawesome.com/ae0d3b7a85.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script id='projectTemplate' type="text/x-handlebars-template">
+      <div class="myProjects">
+        <section class='col-4'>
+          <a href="{{ ghPagesUrl }}">
+            <!-- <img src="{{ image }}" alt=""></a> -->
+            <span class='project-title'>{{ title }}</span>
+        </section>
+      </div>
+    </script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
@@ -16,25 +25,25 @@
     <div class="main">
       <h1>Michael I. Shinners</h1>
       <div class="jobTitle">
-        <h2 class='jobName'>UX/UI Designer & Developer</h2>
-        <h2 class='jobName'>Software Developer</h2>
-        <h2 class='jobName'>Web Designer & Developer</h2>
-        <h2 class='jobName'>Software Engineer</h2>
-        <h2 class='jobName'>Dev</h2>
+        <h2 class='jobName'></h2>
     </div>
 
       <p id="bio">This is the story of me. This is where I sell myself to prospective employers. The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
-      <p id="projectHeader">Here's a sampling of my work.</p>
+    <div id="projectsDiv">
+      <h2 id="projectHeader">Here's a sampling of my work.</h2>
+
+    </div>
+
       <a href="https://www.linkedin.com/in/michael-shinners-652414147/"><i class="fa fa-linkedin" aria-hidden="true" id="linkedIn"></i>
       </a>
       <a href="http://www.github.com/mshinners"><i class="fa fa-github-alt" aria-hidden="true" id="github"></i></a>
-      <button type="button" id='about'>About Me</button>
-      <button type="button" id='portfolio'>My Portfolio</button>
-      <button type="button" id='contact'>Contact Me</button>
+      <button type="button" id='aboutButton'>About Me</button>
+      <button type="button" id='projectsButton'>My Portfolio</button>
+      <button type="button" id='contactButton'>Contact Me</button>
     </div>
     <i class="fa fa-bars" aria-hidden="true" id='hamMenu'></i>
 
+    <script type="text/javascript" src="scripts/portfolioData.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
-  <script type="text/javascript" src="scripts/portfolioData.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
 </html>
