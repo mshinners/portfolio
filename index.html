@@ -6,6 +6,9 @@
     <script src="https://use.fontawesome.com/ae0d3b7a85.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script id='projectTemplate' type="text/x-handlebars-template">
+
+    </script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
@@ -25,20 +28,9 @@
       <h2 id="projectHeader">Here's a sampling of my work.</h2>
       <div class="myProjects">
         <section class='col-4'>
-          <a href="https://mshinners.github.io/Scramble/">
-            <img src="imgs/scramble.png" alt="Scramble"></a>
-        </section>
-        <section class='col-4'>
-          <a href="https://mshinners.github.io/busMall/">
-            <img src="imgs/busMall.png" alt="Bus Mall"></a>
-        </section>
-        <section class='col-4'>
-          <a href="https://mshinners.github.io/cookie-stand/">
-            <img src="imgs/salmonCookies.png" alt="Salmon Cookies"></a>
-        </section>
-        <section class='col-4'>
-        <a href="https://mshinners.github.io/">
-          <img src="imgs/nwGuide.png" alt="NW Guide"></a>
+          <a href="{{ ghPagesUrl }}">
+            <!-- <img src="{{ image }}" alt=""></a> -->
+            <span class='project-title'>{{ title }}</span>
         </section>
       </div>
     </div>
@@ -52,9 +44,7 @@
     </div>
     <i class="fa fa-bars" aria-hidden="true" id='hamMenu'></i>
 
-<h2></h2>
-
+    <script type="text/javascript" src="scripts/portfolioData.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </body>
-  <script type="text/javascript" src="scripts/portfolioData.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
 </html>

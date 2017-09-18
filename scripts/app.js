@@ -1,18 +1,27 @@
 'use strict';
 
+//function to put projects in a grid
 var projects = [];
 
-//function to put projects in a 3x1 table
-function Portfolio(image, title, ghPagesUrl) {
-  this.img = img;
-  this.title = title;
-  this.ghPagesUrl = ghPagesUrl;
+var projectTemplateHTML = $('#projectTemplate').html();
+var templateFunction = Handlebars.compile(projectTemplateHTML);
+
+function Portfolio(projectData) {
+  Object.assign(this, projectData);
   projects.push(this);
-}
+};
 
 Portfolio.prototype.toHtml = function() {
+  var templateParts = templateFunction(this);
+  $('#myProjects').append(templateParts);
   var $newPortfolio = $('div.template').clone();
-};
+}
+
+// projectData.forEach(function(oneProject) {
+//   var project = new Portfolio(oneProject);
+//   project.toHTML();
+// });
+
 $('.main h1').hide().fadeIn(3000);
 
 //function to loop through job titles
@@ -27,7 +36,8 @@ var titleInterval = setInterval(function(){
 });
 $('.jobName').text(titleArray[i]).fadeIn(4000).fadeOut(2000);
 }
-// }, 1000);
+
+//Function chain that allows different elements to fade-in/out
 $('#aboutButton').click(function(){
   $("#bio").fadeIn(2000);
   $("#linkedIn").fadeOut(1000);
@@ -46,7 +56,3 @@ $('#contactButton').click(function(){
   $("#bio").fadeOut(1000);
   $("#projectsDiv").fadeOut(1000);
 });
-
-
-
-// .toHtml()

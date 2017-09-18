@@ -145,22 +145,24 @@ body {
     color: beige;
     font-size: 8vh;
     top: 12vh;
-    left: 14vw;
+    left: 19vw;
   }
   #linkedIn {
     position: absolute;
     color: beige;
     font-size: 8vh;
     top: 12vh;
-    left: 9vw;
+    left: 10vw;
   }
   #bio {
     position: absolute;
     color: beige;
     font-size: 3vh;
     top: 8vh;
+    right: 2vw;
     left: 44vw;
     display: none;
+    text-align: justify;
   }
   #projectHeader {
     position: absolute;
