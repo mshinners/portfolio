@@ -4,23 +4,31 @@
 var projects = [];
 
 var projectTemplateHTML = $('#projectTemplate').html();
+// console.log(projectTemplateHTML);
 var templateFunction = Handlebars.compile(projectTemplateHTML);
-
+// console.log(templateFunction);
 function Portfolio(projectData) {
   Object.assign(this, projectData);
   projects.push(this);
 };
-
+console.log(projectData);
+console.log(this);
 Portfolio.prototype.toHtml = function() {
   var templateParts = templateFunction(this);
-  $('#myProjects').append(templateParts);
-  var $newPortfolio = $('div.template').clone();
-}
+  $('#projectsDiv').append(templateParts);
 
-// projectData.forEach(function(oneProject) {
-//   var project = new Portfolio(oneProject);
-//   project.toHTML();
-// });
+  console.log(templateParts);
+}
+projectData.forEach(function(projObj) {
+  new Portfolio(projObj);
+});
+projects.forEach(function(projObj) {
+  projObj.toHtml();
+});
+
+
+
+
 
 $('.main h1').hide().fadeIn(3000);
 
@@ -44,8 +52,9 @@ $('#aboutButton').click(function(){
   $("#github").fadeOut(1000);
   $("#projectsDiv").fadeOut(1000);
 });
-$('#projectsButton').click(function(){
+$('#projectsButton').on('click', function(){
   $("#projectsDiv").fadeIn(2000);
+  console.log($('#projectsDiv')[0]);
   $("#bio").fadeOut(1000);
   $("#linkedIn").fadeOut(1000);
   $("#github").fadeOut(1000);

@@ -7,7 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script id='projectTemplate' type="text/x-handlebars-template">
-
+      <div class="myProjects">
+        <section class='col-4'>
+          <a href="{{ ghPagesUrl }}">
+            <!-- <img src="{{ image }}" alt=""></a> -->
+            <span class='project-title'>{{ title }}</span>
+        </section>
+      </div>
     </script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -25,13 +31,7 @@
       <p id="bio">This is the story of me. This is where I sell myself to prospective employers. The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
     <div id="projectsDiv">
       <h2 id="projectHeader">Here's a sampling of my work.</h2>
-      <div class="myProjects">
-        <section class='col-4'>
-          <a href="{{ ghPagesUrl }}">
-            <!-- <img src="{{ image }}" alt=""></a> -->
-            <span class='project-title'>{{ title }}</span>
-        </section>
-      </div>
+
     </div>
 
       <a href="https://www.linkedin.com/in/michael-shinners-652414147/"><i class="fa fa-linkedin" aria-hidden="true" id="linkedIn"></i>

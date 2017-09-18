@@ -1,7 +1,5 @@
-* {
-  /*mobile first design*/
-  box-sizing: border-box;
-}
+
+/*mobile first design*/
 body {
   position: relative;
   background-image: url("../imgs/background.jpg"); width: 100vw;
