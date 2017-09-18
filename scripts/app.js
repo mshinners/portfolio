@@ -25,7 +25,7 @@ Portfolio.prototype.toHtml = function() {
 $('.main h1').hide().fadeIn(3000);
 
 //function to loop through job titles
-var titleArray = ['UX/UI Designer & Developer', 'Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev'];
+var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev', 'UX/UI  Developer'];
 var currentTitleIndex = 0;
   for (var i = 0; i < titleArray.length; i++) {
 var titleInterval = setInterval(function(){
@@ -56,3 +56,5 @@ $('#contactButton').click(function(){
   $("#bio").fadeOut(1000);
   $("#projectsDiv").fadeOut(1000);
 });
+
+$('#hamMenu').click()

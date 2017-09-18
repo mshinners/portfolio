@@ -6,33 +6,37 @@ body {
   position: relative;
   background-image: url("../imgs/background.jpg"); width: 100vw;
 }
+.main {
+  position: absolute;
+  position: 43vh;
+  height: 80vh;
+}
 .main h1 {
   position: relative;
   top: 40vh;
   text-align: center;
+  padding-left: 1vw ;
   position: 43vh;
   font-size: 7vh;
-  color: tan;
+  color: beige;
 }
 .jobTitle {
-  /*position: relative;*/
-  top: 200vh;
+  position: relative;
   text-align: center;
-  color: tan;
-  font-size: 4vh;
-  top: 38vh;
-  left: 14vw;
+  color: beige;
+  font-size: 5vh;
+  top: 42vh;
 }
 #hamMenu {
   float: right;
-  color: tan;
+  color: beige;
   position: 1vh;
   font-size: 5vh;
   padding-right: 1vw;
 }
 #bio {
   position: absolute;
-  color: tan;
+  color: beige;
     font-size: 3vh;
   top: 8vh;
   left: 44vw;
@@ -40,16 +44,19 @@ body {
 }
 #projectHeader {
   position: absolute;
-  color: tan;
+  color: beige;
   font-size: 3vh;
   top: 59vh;
   left: 9vw;
   display: none;
 }
+span  {
+  display: none;
+}
 #aboutButton {
   display: none;
 }
-#portfolioButton {
+#projectsButton {
   display: none;
 }
 #contactButton {
@@ -64,8 +71,13 @@ body {
 
 /*Full-screen view*/
 @media only screen and (min-width: 600px) {
+
+  .main {
+
+  }
+
   .main h1 {
-    position: absolute;
+    /*position: absolute;*/
     color: beige;
     font-size: 5vh;
     top: 32vh;
@@ -161,6 +173,7 @@ body {
     top: 8vh;
     right: 2vw;
     left: 44vw;
+    width: 50vw;
     display: none;
     text-align: justify;
   }
