@@ -10,9 +10,9 @@ var templateFunction = Handlebars.compile(projectTemplateHTML);
 function Portfolio(projectData) {
   Object.assign(this, projectData);
   projects.push(this);
+  console.log(this);
 };
-console.log(projectData);
-console.log(this);
+// console.log(projectData);
 Portfolio.prototype.toHtml = function() {
   var templateParts = templateFunction(this);
   $('#projectsDiv').append(templateParts);
@@ -35,9 +35,9 @@ $('.main h1').hide().fadeIn(3000);
 //function to loop through job titles
 var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev', 'UX/UI  Developer'];
 var currentTitleIndex = 0;
-  for (var i = 0; i < titleArray.length; i++) {
 var titleInterval = setInterval(function(){
-  ++currentTitleIndex;
+  for (var i = 0; i < titleArray.length; i++) {
+  currentTitleIndex++;
   if (currentTitleIndex >= titleArray.length) {
     currentTitleIndex = 0;
   }
