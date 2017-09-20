@@ -36,7 +36,7 @@ $('.main h1').hide().fadeIn(3000);
 var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev', 'UX/UI  Developer'];
 var currentTitleIndex = 0;
 var titleInterval = setInterval(function(){
-  for (var i = 0; i < titleArray.length; i++) {
+  // for (var i = 0; i < titleArray.length; i++) {
   currentTitleIndex++;
   if (currentTitleIndex >= titleArray.length) {
     currentTitleIndex = 0;
