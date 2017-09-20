@@ -86,8 +86,9 @@ span  {
     position: absolute;
     color: beige;
     font-size: 3vh;
-    top: 38vh;
-    left: 14vw;
+    top: -9vh;
+    left: 10vw;
+    width: 25vw;
 
   }
   .main p {
@@ -99,12 +100,14 @@ span  {
   }
   #projectsDiv {
     display: none;
-  }
-  .myProjects {
-    width: 100vw;
     position: absolute;
     top: 60vh;
     left: 4vw;
+  }
+  .myProjects {
+    width: 100vw;
+    float: left;
+    /*position: ;*/
   }
   .col-4 {
     width: calc(100%/6);
@@ -181,8 +184,12 @@ span  {
     font-size: 3vh;
     top: 59vh;
     left: 9vw;
-    display: none;
+
   }
+  .projPic {
+    float: left;
+  }
+
   #hamMenu {
     display: none;
   }
