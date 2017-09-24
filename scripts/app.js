@@ -33,7 +33,7 @@ projects.forEach(function(projObj) {
 $('.main h1').hide().fadeIn(3000);
 
 //function to loop through job titles
-var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Dev', 'UX/UI  Developer'];
+var titleArray = ['Software Developer', 'Web Designer & Developer', 'Software Engineer', 'Data Scientist', 'UX/UI  Developer'];
 var currentTitleIndex = 0;
 var titleInterval = setInterval(function(){
   // for (var i = 0; i < titleArray.length; i++) {
@@ -67,3 +67,24 @@ $('#contactButton').click(function(){
 });
 
 $('#hamMenu').click()
+
+
+
+
+
+var possibles = [];
+function isAllPossibilities(x){
+console.log(x);
+  for (var i = 0; i < x.length; i++) {
+    possibles.push(i)
+  }
+    x.sort(function(a,b) {
+    return(b-a);
+  });
+    if (x.length === 0){
+    return false;
+  }
+    else {
+    return x.toString().includes(possibles.toString());
+  }
+}
