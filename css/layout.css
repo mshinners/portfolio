@@ -82,7 +82,7 @@ span  {
     left: 10vw;
   }
 
-  .main h2 {
+  .jobName {
     position: absolute;
     color: beige;
     font-size: 3vh;
