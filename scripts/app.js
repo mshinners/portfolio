@@ -20,7 +20,7 @@ var app = app || {};
   Portfolio.prototype.toHtml = function() {
     var templateParts = templateFunction(this);
     $('#projectsDiv').append(templateParts);
-
+    // console.log(templateParts);
     // console.log(templateParts);
   }
   projectData.forEach(function(projObj) {
