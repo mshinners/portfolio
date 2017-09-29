@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mshinners/portfolio/issues"
   },
-  "homepage": "https://github.com/mshinners/portfolio#readme"
+  "homepage": "https://github.com/mshinners/portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.0"
+  }
 }
